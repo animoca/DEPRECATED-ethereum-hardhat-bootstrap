@@ -1,0 +1,30 @@
+{
+  "keywords": [
+    "animoca",
+    "ethereum",
+    "solidity",
+    "hardhat"
+  ],
+  "scripts": {
+    "postinstall": "animoca-setup-vscode",
+    "lint:js": "eslint \"**/*.{js,ts}\"",
+    "lint": "run-s lint:js",
+    "fix:js": "eslint --fix \"**/*.{js,ts}\"",
+    "fix": "run-s fix:js",
+    "format:js": "prettier --write \"**/*.{ts,js}\"",
+    "format": "run-s format:js",
+    "clean:vscode": "rm -rf .vscode/extensions.json .vscode/launch.json .vscode/settings.json",
+    "ganache": "ganache-cli -g 1000000000",
+    "release:private": "animoca-release-package private",
+    "release:public": "animoca-release-package public"
+  },
+  "devDependencies": {
+    "hardhat": "^2.1.2"
+  },
+  "peerDependencies": {
+    "hardhat": "^2.1.2"
+  },
+  "engines": {
+    "node": ">=12.18 <13"
+  }
+}

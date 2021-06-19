@@ -1,0 +1,13 @@
+node_modules/
+.npmrc*
+yarn-error.log
+
+.vscode/*
+!.vscode/settings.json.default
+!.vscode/launch.json.default
+!.vscode/extensions.json.default
+
+hardhat.config.last.json
+
+.DS_Store
+

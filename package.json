@@ -1,0 +1,54 @@
+{
+  "name": "@animoca/ethereum-hardhat-bootstrap",
+  "version": "1.0.0",
+  "description": "HardHat projects bootstrap and core dependency",
+  "author": "Animoca Brands",
+  "license": "MIT",
+  "keywords": [
+    "animoca",
+    "ethereum",
+    "hardhat",
+    "bootstrap"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:animoca/ethereum-hardhat-bootstrap.git"
+  },
+  "main": "src/index.js",
+  "bin": {
+    "animoca-clean-vscode": "rm -rf .vscode/extensions.json .vscode/launch.json .vscode/settings.json",
+    "animoca-hardhat-bootstrap": "scripts/hardhat-bootstrap.js",
+    "animoca-release-package": "scripts/release-package.sh",
+    "animoca-setup-vscode": "scripts/setup-vscode.js",
+    "animoca-sort-package": "scripts/sort-package-json.js"
+  },
+  "scripts": {
+    "postinstall": "./scripts/setup-vscode.js",
+    "lint": "eslint \"**/*.{js,ts}\"",
+    "fix": "eslint --fix \"**/*.{js,ts}\"",
+    "format": "prettier --write \"**/*.{ts,js}\"",
+    "clean:vscode": "rm -rf .vscode/extensions.json .vscode/launch.json .vscode/settings.json",
+    "run-all": "run-s lint fix format",
+    "release:private": "./scripts/release-package.sh private",
+    "release:public": "./scripts/release-package.sh public"
+  },
+  "dependencies": {
+    "commander": "^7.2.0",
+    "eslint": "^7.29.0",
+    "eslint-config-mocha": "^0.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-mocha": "^9.0.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "fs-extra": "^10.0.0",
+    "ganache-cli": "^6.12.2",
+    "lodash.merge": "^4.6.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.13",
+    "sort-package-json": "^1.50.0",
+    "yesno": "^0.3.1"
+  },
+  "engines": {
+    "node": ">=12.18 <13"
+  }
+}
