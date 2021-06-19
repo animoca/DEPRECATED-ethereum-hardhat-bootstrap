@@ -19,10 +19,10 @@
     "release:public": "animoca-release-package public"
   },
   "devDependencies": {
-    "hardhat": "^2.1.2"
+    "hardhat": "^2.4.0"
   },
   "peerDependencies": {
-    "hardhat": "^2.1.2"
+    "hardhat": "^2.4.0"
   },
   "engines": {
     "node": ">=12.18 <13"
