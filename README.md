@@ -9,19 +9,19 @@ A node project must be initialised. If you are starting from zero, start by runn
 
 HardHat contracts template
 ```bash
-yarn add -D @animoca/ethereum-hardhat-bootstrap @animoca/ethereum-contracts-core_library
+yarn add -D @animoca/ethereum-hardhat-bootstrap @animoca/ethereum-contracts-core
 npx animoca-hardhat-bootstrap -t contracts
 ```
 
 HardHat migrations template
 ```bash
-yarn add -D @animoca/ethereum-hardhat-bootstrap @animoca/ethereum-migrations-core_library
+yarn add -D @animoca/ethereum-hardhat-bootstrap @animoca/ethereum-migrations-core
 npx animoca-hardhat-bootstrap -t migrations
 ```
 
 HardHat standalone template
 ```bash
-yarn add -D @animoca/ethereum-hardhat-bootstrap @animoca/ethereum-contracts-core_library @animoca/ethereum-migrations-core_library
+yarn add -D @animoca/ethereum-hardhat-bootstrap @animoca/ethereum-contracts-core @animoca/ethereum-migrations-core
 npx animoca-hardhat-bootstrap -t standalone
 ```
 
