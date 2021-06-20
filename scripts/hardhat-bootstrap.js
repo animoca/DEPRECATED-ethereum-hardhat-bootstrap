@@ -42,7 +42,7 @@ function bootstrap() {
   try {
     for (const template of templates) {
       if (!fse.pathExistsSync(path.join(process.env.PWD, 'node_modules', templateLib(template)))) {
-        console.log(`please run 'yarn add -D ${templates.map((t) => templateLib(t))}' to initialise a ${templates.join('/')} project`);
+        console.log(`please run 'yarn add -D ${templates.map((t) => templateLib(t)).join(' ')}' to initialise a ${templates.join('/')} project`);
         process.exit(1);
       }
     }
