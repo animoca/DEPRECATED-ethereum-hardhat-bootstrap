@@ -12,7 +12,7 @@ program.option('-t, --template [template]');
 program.parse(process.argv);
 const options = program.opts();
 
-const templateLib = (template) => `@animoca/ethereum-${template}-core_library`;
+const templateLib = (template) => `@animoca/ethereum-${template}-core`;
 
 const usage = () => {
   console.log('usage: hardhat-bootstrap [--yes] --template <contracts|migrations|standalone|...>');
