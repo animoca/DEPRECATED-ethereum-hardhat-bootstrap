@@ -48,8 +48,8 @@ yarn release:private
 ```
 
 ```bash
-# runs `npm publish --public` using .npmrc_private configuration
-yarn release:private
+# runs `npm publish --public` using .npmrc_public configuration
+yarn release:public
 ```
 
 ### Suggested 
