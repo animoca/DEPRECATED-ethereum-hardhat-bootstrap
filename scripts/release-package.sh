@@ -17,6 +17,6 @@ if [ -f $npmrc ]; then
     ln -s $npmrc .npmrc
 fi
 
-npm publish --scope public
+npm publish --access public
 
 rm -rf .npmrc
