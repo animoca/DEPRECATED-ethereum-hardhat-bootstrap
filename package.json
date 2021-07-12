@@ -1,6 +1,6 @@
 {
   "name": "@animoca/ethereum-hardhat-bootstrap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "HardHat projects bootstrap and core dependency",
   "author": "Animoca Brands",
   "license": "MIT",
@@ -33,8 +33,8 @@
     "release:public": "./scripts/release-package.sh public"
   },
   "dependencies": {
-    "commander": "^7.2.0",
-    "eslint": "^7.29.0",
+    "commander": "^8.0.0",
+    "eslint": "^7.30.0",
     "eslint-config-mocha": "^0.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-mocha": "^9.0.0",
@@ -43,8 +43,8 @@
     "ganache-cli": "^6.12.2",
     "lodash.merge": "^4.6.2",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.3.1",
-    "prettier-plugin-solidity": "^1.0.0-beta.13",
+    "prettier": "^2.3.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.15",
     "sort-package-json": "^1.50.0",
     "yesno": "^0.3.1"
   },
