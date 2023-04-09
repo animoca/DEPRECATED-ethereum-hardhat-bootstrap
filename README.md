@@ -1,25 +1,33 @@
-# @animoca/ethereum-hardhat-bootstrap
+# DEPRECATED - HardhHat project bootstrap
 
-## HardhHat project bootstrap
+## Deprecation notice
+
+This repository is now deprecated and not maintained any longer. Use this new library instead: <https://github.com/animoca/ethereum-contract-helpers>
+
+## Introduction
 
 ### Requirements
 
 A node project must be initialised. If you are starting from zero, start by running the command `npm init`.
+
 ### Commands
 
 HardHat contracts template
+
 ```bash
 yarn add -D @animoca/ethereum-hardhat-bootstrap @animoca/ethereum-contracts-core
 npx animoca-hardhat-bootstrap -t contracts
 ```
 
 HardHat migrations template
+
 ```bash
 yarn add -D @animoca/ethereum-hardhat-bootstrap @animoca/ethereum-migrations-core
 npx animoca-hardhat-bootstrap -t migrations
 ```
 
 HardHat standalone template
+
 ```bash
 yarn add -D @animoca/ethereum-hardhat-bootstrap @animoca/ethereum-contracts-core @animoca/ethereum-migrations-core
 npx animoca-hardhat-bootstrap -t standalone
@@ -37,10 +45,8 @@ yarn run-all
 ## HardHat project configuration
 
 Bootstrapped HardHat projects have a more advanced configuration files management:
-- 
-## Release
 
-### Commands
+## Release
 
 ```bash
 # runs `npm publish --public` using .npmrc_private configuration
@@ -52,5 +58,6 @@ yarn release:private
 yarn release:public
 ```
 
-### Suggested 
+### Suggested
+
 `.npmrc_private` `.npmrc_public`
