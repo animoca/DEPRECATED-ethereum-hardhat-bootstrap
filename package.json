@@ -1,6 +1,6 @@
 {
   "name": "@animoca/ethereum-hardhat-bootstrap",
-  "version": "1.0.1",
+  "version": "2.0.0-rc.0",
   "description": "HardHat projects bootstrap and core dependency",
   "author": "Animoca Brands",
   "license": "MIT",
@@ -23,7 +23,6 @@
     "animoca-sort-package": "scripts/sort-package-json.js"
   },
   "scripts": {
-    "postinstall": "./scripts/setup-vscode.js",
     "lint": "eslint \"**/*.{js,ts}\"",
     "fix": "eslint --fix \"**/*.{js,ts}\"",
     "format": "prettier --write \"**/*.{ts,js}\"",
@@ -32,7 +31,7 @@
     "release:private": "./scripts/release-package.sh private",
     "release:public": "./scripts/release-package.sh public"
   },
-  "dependencies": {
+  "devDependencies": {
     "commander": "^8.0.0",
     "eslint": "^7.30.0",
     "eslint-config-mocha": "^0.0.0",
@@ -47,8 +46,5 @@
     "prettier-plugin-solidity": "^1.0.0-beta.15",
     "sort-package-json": "^1.50.0",
     "yesno": "^0.3.1"
-  },
-  "engines": {
-    "node": ">=12.18 <13"
   }
 }
